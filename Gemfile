@@ -19,8 +19,6 @@ gem "bcrypt_pbkdf"
 # gem "ruby-bcrypt-pbkdf"
 # gem "ruby-net-ssh"
 
-gem 'net-ssh', '7.0.0.beta1'
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -69,6 +67,7 @@ group :development do
   gem "web-console"
   gem "io-console", "~> 0.5.9"
   gem 'capistrano', '3.17.0'
+  gem 'net-ssh', '7.0.0.beta1'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
