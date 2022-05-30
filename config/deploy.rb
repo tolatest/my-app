@@ -4,7 +4,7 @@
 set :application, "learn2welldup"
 set :repo_url, "git@github.com:tolatest/my-app.git"
 
-set :deploy_user, 'jenkins'
+set :deploy_user, 'wcmc'
 
 set :scm_username, "tolatest"
 
