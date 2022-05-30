@@ -127,6 +127,7 @@ GEM
       digest
       net-protocol
       timeout
+    net-ssh (6.1.0)
     nio4r (2.5.8)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
@@ -218,20 +219,20 @@ DEPENDENCIES
   capybara
   debug
   importmap-rails
+  io-console (~> 0.5.9)
   jbuilder
+  net-ssh
   puma (~> 5.0)
   rails (~> 7.0.3)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  strscan (~> 3.0.0)
   turbo-rails
   tzinfo-data
   web-console
   webdrivers
 
-RUBY VERSION
-   ruby 3.1.0p0
-
 BUNDLED WITH
-   2.3.3
+   2.3.14
