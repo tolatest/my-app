@@ -19,6 +19,8 @@ gem "bcrypt_pbkdf"
 # gem "ruby-bcrypt-pbkdf"
 # gem "ruby-net-ssh"
 
+# gem "openssl", "~> 2.1.0.beta2"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
