@@ -1,7 +1,12 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+<<<<<<< HEAD
 #ruby "3.1.0"
+=======
+ruby "3.1.0"
+# ruby "3.0.2"
+>>>>>>> origin/main
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
@@ -73,3 +78,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+# end of the file
