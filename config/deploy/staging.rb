@@ -7,7 +7,16 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
+set :stage, :staging
+set :branch, "main"
 
+server "romoke-test.unep-wcmc.org", user: "wcmc", roles: %w{app db web}
+
+set :application, "learn2welldup"
+set :server_name, "learn2well.blog"
+
+set :sudo_user, "wcmc"
+set :app_port, "80"
 
 # role-based syntax
 # ==================
