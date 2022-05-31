@@ -61,8 +61,8 @@ namespace :configD do
      task :setupD do
        on roles(:app) do
       # execute "touch #{fetch(:shared_path)}/config/.env"
-       execute "cd #{shared_path}"
-       execute "touch #{shared_path}/database.yml"
+       execute "cd #{shared_path}/config"
+       execute "touch #{shared_path}/config/database.yml"
       end
    end
 end
