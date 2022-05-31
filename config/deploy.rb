@@ -56,4 +56,17 @@ set :keep_releases, 4
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
+namespace :configD do
+     desc "create dot env file"
+     task :setupD do
+       on roles(:app) do
+      # execute "touch #{fetch(:shared_path)}/config/.env"
+       execute "cd #{shared_path}"
+       execute "touch #{shared_path}/database.yml"
+      end
+   end
+end
+
+after 'deploy:check:make_linked_dirs', 'configD:setupD'
+
 set :passenger_restart_with_touch, false
